@@ -7,10 +7,24 @@ Implemented based on https://github.com/basecamp/bcx-api
 Getting started
 ----------------
 1. Install Opauth-Basecamp:
+
+   Using git:
    ```bash
    cd path_to_opauth/Strategy
    git clone https://github.com/t1mmen/opauth-basecamp.git Basecamp
    ```
+
+  Or, using [Composer](https://getcomposer.org/), just add this to your `composer.json`:
+
+   ```bash
+   {
+       "require": {
+           "t1mmen/opauth-basecamp": "*"
+       }
+   }
+   ```
+   Then run `composer install`.
+
 
 2. Create Basecamp application at https://integrate.37signals.com/
 
