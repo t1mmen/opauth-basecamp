@@ -2,6 +2,8 @@
 /**
  * Basecamp strategy for Opauth
  *
+ * Based on work by U-Zyn Chua (http://uzyn.com)
+ *
  * More information on Opauth: http://opauth.org
  *
  * @copyright    Copyright © 2014 Timm Stokke (http://timm.stokke.me)
