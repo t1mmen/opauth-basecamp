@@ -78,15 +78,15 @@ class BasecampStrategy extends OpauthStrategy {
 			if (!empty($results) && !empty($results['access_token'])) {
 				$user = $this->user($results['access_token']);
 
-				$accounts =
-
 				$this->auth = array(
 					'uid' => $user['identity']['id'],
 					'info' => array(
 						'name' => $user['identity']['first_name'].' '.$user['identity']['last_name']
 						),
 					'credentials' => array(
-						'token' => $results['access_token']
+						'token' => $results['access_token'],
+						'refresh_token' =>  $results['refresh_token'],
+						'expires_in' =>  $results['expires_in']
 					),
 					'raw' => $user
 				);
